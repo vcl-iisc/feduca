@@ -1,0 +1,26 @@
+beta_srv : 1.0
+beta_clnt : 0.0
+clnt_shape_weight : 0.1
+method : 'FedDyn'
+lr : 1.0
+iid : 1
+n_clnts : 10
+model_name         : 'cifar10' # Model type
+com_amount         : 100 # Number of communication rounds
+save_period        : 10 # frequency of saving the model to disk; save_instances : com_amount/save_period
+weight_decay       : 1e-4
+batch_size         : 50
+act_prob           : 1 # probability of client being active in a communication round
+lr_decay_per_round : 1.0
+epoch              : 5 # client local training
+print_per          : 1 # frequency of logging training updates 
+sub_run            : 'c1_01'
+thr : 0.50
+quad_type : 0
+bl : 1
+n_class : 10
+dir : '/media/dharma/8tb/FedDyn/Output/CIFAR100_20_Dirichlet_0.2_1.0/RFedDisco_lr1.0_E5_iid0_n_clnts20_bl1'
+seed : 2025
+al : 0.5 
+bh : 1.0
+num_strategy : 10
